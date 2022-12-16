@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+</head>
+<body>
+<center>
+	<h1> Login Here</h1>
+
+<form method='POST'>
+
+    {%csrf_token%}
+	{{form.as_p}}
+
+	<button>LOGIN</button>
+
+</form>
+
+<a href="/signup"><button> Create Account </button></a>
+
+
+</center>
+
+</body>
+</html>
